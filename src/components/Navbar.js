@@ -1,11 +1,11 @@
 import React, { useContext } from 'react';
-import { useNavigate } from 'react-router-dom';
+
 import { DContext } from '../context/Datacontext';
-import LoadingPage from './Laoding';
+
 
 
 const Navbar = () => {
-  const navigate = useNavigate()
+  
   const apiurl = process.env.REACT_APP_API_URL
   const {Auth}= useContext(DContext)
   console.log("Auth By navbar",Auth)
@@ -35,7 +35,7 @@ const Navbar = () => {
         {/* Logo / Brand */}
 
       
-        <a className="navbar-brand fw-bold text-primary px-2 " href="/">
+        <a className=" fw-bold text-primary px-2 text-decoration-none " href="/">
         Non-Invasive Coronary Blockage Detection System
         </a> 
        
