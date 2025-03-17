@@ -29,7 +29,7 @@ export const NewDashboard = () => {
   useEffect(() => {
     const fetchData = async () => {
 
-        const url = "https://api.thingspeak.com/channels/2858841/feeds.json?api_key=VQCSONX90Y2FPYWT";
+        const url = "https://api.thingspeak.com/channels/2876404/feeds.json?api_key=U22MVFWIXFCEUM7C";
 
 
         fetch(url)
@@ -58,7 +58,7 @@ export const NewDashboard = () => {
                     "x-axis": xAxis,
                     "y-axis": data.feeds.map(feed=>feed.field3),
                     color: "#ff4f4f",
-                    seriesName: 'Sound'
+                    seriesName: 'Microphone'
                 })
 
 
